@@ -14,7 +14,7 @@
 
   color-scheme: light dark;
   color: #000000;
-  background-color: #e2e9f3;
+  background-color: #e9f2ff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,7 +32,9 @@ button {
   outline: none;
 }
 p,
-li {
+li,
+button,
+span {
   font-family: "Inter", sans-serif;
   font-weight: 300;
 }
@@ -41,6 +43,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
   color: #000;
+  overflow-x: hidden;
+  background-color: #e9f2ff;
 }
 
 h1 {
@@ -49,10 +53,9 @@ h1 {
 }
 
 button {
-  padding: 0.6em 1.2em;
   cursor: pointer;
 }
-.material-symbols-outlined {
+#ham {
   cursor: pointer;
   background: white;
   color: black;
@@ -63,19 +66,19 @@ button {
 @media (prefers-color-scheme: dark) {
   :root {
     color: #000;
-    background-color: #e2e9f3;
+    background-color: #e9f2ff;
   }
 }
 
 @media screen and (min-width: 710px) {
-  .material-symbols-outlined {
+  #ham {
     font-size: 0.8rem !important;
     padding: 0.8rem 1rem;
   }
 }
 
 @media screen and (min-width: 980px) {
-  .material-symbols-outlined {
+  #ham {
     font-size: 1.2rem !important;
     padding: 0.8rem 1.8rem;
   }

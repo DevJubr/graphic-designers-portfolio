@@ -8,7 +8,7 @@ const AppBar = () => {
       <Container>
         <Wrapper>
           <div className="for__logo">
-            <h2>Zayex</h2>
+            <H2>Zayex</H2>
           </div>
           <ForMenu vblty={active}>
             <UnorderedList>
@@ -23,6 +23,7 @@ const AppBar = () => {
             {/* <span class="material-symbols-outlined">close</span> */}
             <span
               class="material-symbols-outlined"
+              id="ham"
               onClick={() => setactive((prev) => !prev)}
             >
               menu
@@ -66,12 +67,14 @@ const ForMenu = styled.div`
     position: unset;
     width: unset;
     height: unset;
+    transform: unset;
   }
 
   @media screen and (min-width: 980px) {
     position: unset;
     width: unset;
     height: unset;
+    transform: unset;
   }
 `;
 
@@ -103,14 +106,17 @@ const Button0 = styled.button`
   font-size: 1.2rem;
   padding: 0.8rem 1.8rem;
   background-color: black;
+  display: none;
   color: white;
 
   @media screen and (min-width: 710px) {
     font-size: 0.8rem;
+    display: block;
     padding: 0.8rem 1rem;
   }
 
   @media screen and (min-width: 980px) {
+    display: block;
     font-size: 1.2rem;
     padding: 0.8rem 1.8rem;
   }
@@ -121,5 +127,13 @@ const ForNavButtons = styled.div`
   gap: 1rem;
 
   @media screen and (min-width: 980px) {
+  }
+`;
+const H2 = styled.h2`
+  font-size: 2rem;
+  font-weight: 200;
+
+  @media screen and (min-width: 980px) {
+    font-size: 3rem;
   }
 `;
