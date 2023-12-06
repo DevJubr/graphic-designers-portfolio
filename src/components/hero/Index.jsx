@@ -124,6 +124,7 @@ const Headline = styled.div`
     h1 {
       font-size: 2rem !important;
       text-align: center;
+      line-height: 2.8rem;
     }
   }
 `;
