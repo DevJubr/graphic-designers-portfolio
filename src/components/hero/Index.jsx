@@ -74,9 +74,9 @@ const Img = styled.img`
   height: 240px;
   object-fit: cover;
   border-radius: 50%;
-  border-image: linear-gradient(138deg, #7aff60 9.86%, #ea00ff 104.95%) 1;
+  /* border-image: linear-gradient(138deg, #7aff60 9.86%, #ea00ff 104.95%) 1;
   border-style: solid;
-  border-width: 4px;
+  border-width: 4px; */
   @media screen and (max-width: 710px) {
     width: 200px;
     height: 200px;
@@ -124,12 +124,12 @@ const Headline = styled.div`
     h1 {
       font-size: 2rem !important;
       text-align: center;
-      line-height: 2.8rem;
+      /* line-height: 2.8rem; */
     }
   }
 `;
 
-const ColorfulText = styled.h1`
+const ColorfulText = styled(motion.h1)`
   background-image: linear-gradient(138deg, #ff8660 9.86%, #8000ff 104.95%);
   background-clip: text;
   -webkit-background-clip: text;
