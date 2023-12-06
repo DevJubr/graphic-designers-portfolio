@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "../../utils/forStyled";
 import styled from "styled-components";
 import Model from "../../assets/model.jpeg";
+import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
     <section>
@@ -12,8 +13,30 @@ const HeroSection = () => {
           </ForImg>
           <ForText>
             <Headline>
-              <ColorfulText>hello! I am Zayexd,</ColorfulText>
-              <h1>ceative graphic designer based in vangladesh.</h1>
+              <ColorfulText
+                animate={{
+                  opacity: 1,
+                  transition: {
+                    duration: 1,
+                    ease: "easeInOut",
+                  },
+                }}
+                initial={{ opacity: 0 }}
+              >
+                hello! I am Zayexd,
+              </ColorfulText>
+              <motion.h1
+                animate={{
+                  opacity: 1,
+                  transition: {
+                    duration: 1,
+                    ease: "easeInOut",
+                  },
+                }}
+                initial={{ opacity: 0 }}
+              >
+                ceative graphic designer based in vangladesh.
+              </motion.h1>
             </Headline>
             <Subline>
               <p>
