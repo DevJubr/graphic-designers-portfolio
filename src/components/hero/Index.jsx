@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "../../utils/forStyled";
 import styled from "styled-components";
-import Model from "../../assets/model.jpeg";
+import Model from "../../assets/model.jpg";
 import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
@@ -39,11 +39,20 @@ const HeroSection = () => {
               </motion.h1>
             </Headline>
             <Subline>
-              <p>
+              <motion.p
+                animate={{
+                  opacity: 1,
+                  transition: {
+                    duration: 1,
+                    ease: "easeInOut",
+                  },
+                }}
+                initial={{ opacity: 0 }}
+              >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reprehenderit corporis similique quam quasi, veniam aspernatur
                 optio. Corrupti accusamus tempore quo.
-              </p>
+              </motion.p>
             </Subline>
           </ForText>
           <ForButton>
@@ -77,6 +86,7 @@ const Img = styled.img`
   /* border-image: linear-gradient(138deg, #7aff60 9.86%, #ea00ff 104.95%) 1;
   border-style: solid;
   border-width: 4px; */
+  /* border: 2px solid #ddd; */
   @media screen and (max-width: 710px) {
     width: 200px;
     height: 200px;
