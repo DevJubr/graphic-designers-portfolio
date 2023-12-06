@@ -1,173 +1,126 @@
 import React from "react";
 import { Container } from "../../utils/forStyled";
+import styled from "styled-components";
 const HeroSection = () => {
   return (
     <section>
       <Container>
         <Wrapper>
-          <ContentSide>
-            <HeaderText>
-              <Heading>
-                Get Your
-                <br />
-                Product Identity from Me.
-              </Heading>
-            </HeaderText>
-
-            <HeroButton>
-              Download CV
-              <span
-                style={{
-                  // width: "10px",
-                  // height: "10px",
-                  fontSize: "1.5rem",
-                }}
-                className="material-symbols-outlined"
-              >
-                cloud_download
-              </span>
-            </HeroButton>
-          </ContentSide>
-          <ImgSide>
-            <ImageBorder />
-            <Image
-              src="https://unsplash.com/photos/WMD64tMfc4k/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8Nnx8bW9kZWwlMjBtYW4lMjBibGFjayUyMGFuZCUyMHdoaXRlfGVufDB8fHx8MTcwMTc1MzE1NXww&force=true&w=640"
-              alt=""
+          <ForImg>
+            <Img
+              src="https://chotourl.vercel.app/rNyZd8H_f"
+              alt="Zayedur rahman Sabbir"
             />
-          </ImgSide>
+          </ForImg>
+          <ForText>
+            <Headline>
+              <ColorfulText>hello! I am Zayexd,</ColorfulText>
+              <h1>ceative graphic designer based in vangladesh.</h1>
+            </Headline>
+            <Subline>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit corporis similique quam quasi, veniam aspernatur
+                optio. Corrupti accusamus tempore quo.
+              </p>
+            </Subline>
+          </ForText>
+          <ForButton>
+            <Button>get it touch.</Button>
+            <WithborderButton>view al works.</WithborderButton>
+          </ForButton>
         </Wrapper>
       </Container>
     </section>
   );
 };
 
-import styled from "styled-components";
+export default HeroSection;
+
+// ---------------- styled ------------------------
+
+const ForImg = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Img = styled.img`
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+`;
 
 const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
+  padding: 3rem 0;
   gap: 3rem;
-  margin-top: 3rem;
-  @media screen and (min-width: 710px) {
-    flex-direction: row;
-    align-items: center;
-    /* max-height: calc(100vh - 80px); */
-    justify-content: space-between;
-    /* border: 1px solid red; */
-    margin-top: 5rem;
-  }
 `;
 
-const ContentSide = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3.5rem;
-  @media screen and (min-width: 710px) {
-    width: calc(100% / 2);
-  }
-`;
-
-const ImgSide = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-  @media screen and (min-width: 910px) {
-    width: calc(100% / 2);
-    ::before {
-      content: "Graphic designer";
-      position: absolute;
-      font-size: 9rem;
-      right: -1%;
-      width: 65px;
-      top: 22%;
-      color: white;
-      font-weight: 600;
-      line-height: 1;
-      text-transform: capitalize;
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: calc(100% / 3);
-    ::before {
-      content: "Graphic designer";
-      position: absolute;
-      font-size: 9rem;
-      right: -1%;
-      width: 65px;
-      top: 22%;
-      color: white;
-      font-weight: 600;
-      line-height: 1;
-      text-transform: capitalize;
-    }
-  }
-`;
-
-const Image = styled.img`
-  width: 85%;
-  object-fit: cover;
-  border-radius: 155px;
-  position: relative;
-`;
-
-const ImageBorder = styled.div`
-  content: "";
-  width: 88%;
-  height: 100%;
-  position: absolute;
-  top: 3%;
-  left: 3%;
-  border: 1px solid #b24a4a;
-  border-radius: 150px;
-`;
-
-const HeaderText = styled.div`
+const ForText = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 `;
 
-const Heading = styled.h1`
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  font-size: 4rem;
-  font-weight: 300;
-  @media screen and (min-width: 910px) {
-    font-size: 5rem;
+const Headline = styled.div`
+  h1 {
+    font-size: 2rem !important;
+    text-align: center;
   }
 `;
 
-const HeroButton = styled.button`
-  border: none;
-  outline: none;
-  text-transform: capitalize;
-  letter-spacing: 1px;
+const ColorfulText = styled.h1`
+  background-image: linear-gradient(138deg, #ff8660 9.86%, #8000ff 104.95%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -o-background-clip: text;
+  color: transparent;
+`;
+
+const Subline = styled.div`
+  p {
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 100%;
+    font-size: 0.8rem;
+    line-height: 1.22rem;
+  }
+`;
+
+const ForButton = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.6rem;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 1rem;
+`;
+
+const Button = styled.button`
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: aliceblue;
   font-size: 0.8rem;
-  background: black;
-  color: white;
+  color: black;
+  padding: 0.8rem 1.2rem;
+  border-radius: 2rem;
   cursor: pointer;
-  padding: 1rem 1.4rem;
-
-  @media screen and (min-width: 710px) {
-    gap: 0.8rem;
-    font-size: 1rem;
-    padding: 1.2rem 1.8rem;
-  }
 `;
 
-export default HeroSection;
+const WithborderButton = styled(Button)`
+  background: none;
+  color: aliceblue;
+  border: 2px solid aliceblue;
+`;

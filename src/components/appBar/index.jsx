@@ -1,34 +1,41 @@
 import styled from "styled-components";
 import { Container } from "../../utils/forStyled";
-import { useState } from "react";
+
 const AppBar = () => {
-  const [active, setactive] = useState(false);
+  const nav_items = [
+    {
+      item: "home",
+    },
+    {
+      item: "service",
+    },
+    {
+      item: "project",
+    },
+    {
+      item: "about",
+    },
+    {
+      item: "blog",
+    },
+  ];
   return (
     <nav>
       <Container>
         <Wrapper>
-          <div className="for__logo">
-            <H2>Zayex</H2>
+          <NavLeft>
+            <NavLogo>Zayed</NavLogo>
+            <NavMenuWrapper>
+              <NavMenu>
+                {nav_items.map((item, index) => (
+                  <NavItem key={index}>{item.item}</NavItem>
+                ))}
+              </NavMenu>
+            </NavMenuWrapper>
+          </NavLeft>
+          <div className="navRight">
+            <NavButton>Let's Talk.</NavButton>
           </div>
-          <ForMenu vblty={active}>
-            <UnorderedList>
-              <ListItem>Home</ListItem>
-              <ListItem>Service</ListItem>
-              <ListItem>Portfolio</ListItem>
-              <ListItem>Contact</ListItem>
-            </UnorderedList>
-          </ForMenu>
-          <ForNavButtons>
-            <Button0>Get in Touch</Button0>
-            {/* <span class="material-symbols-outlined">close</span> */}
-            <span
-              class="material-symbols-outlined"
-              id="ham"
-              onClick={() => setactive((prev) => !prev)}
-            >
-              menu
-            </span>
-          </ForNavButtons>
         </Wrapper>
       </Container>
     </nav>
@@ -38,102 +45,93 @@ const AppBar = () => {
 export default AppBar;
 
 // ---------------styled-components--------------
-
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  margin: 1rem 0;
-  position: relative;
   justify-content: space-between;
-  @media screen and (min-width: 710px) {
-    position: unset;
-  }
-
-  @media screen and (min-width: 980px) {
-    position: unset;
-  }
-`;
-
-const ForMenu = styled.div`
-  position: absolute;
-  top: 100%;
-  transform: ${(props) =>
-    props.vblty === true ? "translateX(0%)" : "translateX(-100%)"};
-  transition: transform ease 0.4s;
-  width: 100%;
-  height: 100vh;
-  padding: 2rem 0;
-  @media screen and (min-width: 710px) {
-    position: unset;
-    width: unset;
-    height: unset;
-    transform: unset;
-  }
-
-  @media screen and (min-width: 980px) {
-    position: unset;
-    width: unset;
-    height: unset;
-    transform: unset;
-  }
-`;
-
-const ListItem = styled.li`
-  text-transform: capitalize;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
-  font-weight: 300;
-`;
-
-const UnorderedList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
-
-  @media screen and (min-width: 710px) {
-    flex-direction: row;
+  padding: 1.5rem 0;
+  @media screen and (max-width: 710px) {
+    display: flex;
+    width: 100%;
     align-items: center;
-    gap: 1.6rem;
-  }
-  @media screen and (min-width: 980px) {
-    flex-direction: row;
-    align-items: center;
-    gap: 4rem;
+    justify-content: space-between;
+    padding: 1.5rem 0;
   }
 `;
-const Button0 = styled.button`
-  font-size: 1.2rem;
-  padding: 0.8rem 1.8rem;
-  background-color: black;
-  display: none;
-  color: white;
 
-  @media screen and (min-width: 710px) {
-    font-size: 0.8rem;
-    display: block;
-    padding: 0.8rem 1rem;
-  }
-
-  @media screen and (min-width: 980px) {
-    display: block;
-    font-size: 1.2rem;
-    padding: 0.8rem 1.8rem;
-  }
-`;
-const ForNavButtons = styled.div`
+const NavLeft = styled.div`
   display: flex;
   align-items: center;
-  gap: 1rem;
-
-  @media screen and (min-width: 980px) {
+  gap: 4rem;
+  @media screen and (max-width: 710px) {
+    display: flex;
+    align-items: center;
   }
 `;
-const H2 = styled.h2`
-  font-size: 2rem;
-  font-weight: 200;
 
-  @media screen and (min-width: 980px) {
-    font-size: 3rem;
+const NavLogo = styled.h2`
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 2.5rem;
+  @media screen and (max-width: 710px) {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 200;
+    font-size: 1.77rem;
+  }
+`;
+
+const NavMenuWrapper = styled.div`
+  @media screen and (max-width: 710px) {
+    position: fixed;
+    bottom: 2%;
+    max-width: 1400px;
+    width: 90%;
+    display: none;
+  }
+`;
+
+const NavMenu = styled.ul`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  @media screen and (max-width: 710px) {
+    padding: 1rem;
+    text-transform: uppercase;
+    background: #dae5ff;
+    border-radius: 2rem;
+    gap: 0rem;
+  }
+`;
+
+const NavButton = styled.button`
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  background: aliceblue;
+  color: black;
+  padding: 0.8rem 1.2rem;
+  border-radius: 4rem;
+  @media screen and (max-width: 710px) {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    background: aliceblue;
+    color: black;
+    padding: 0.6rem 1rem;
+    border-radius: 4rem;
+  }
+`;
+
+const NavItem = styled.li`
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  @media screen and (max-width: 710px) {
+    background: none;
+    color: black;
+    font-size: 0.6rem;
   }
 `;
