@@ -9,7 +9,19 @@ const HeroSection = () => {
       <Container>
         <Wrapper>
           <ForImg>
-            <Img src={Model} alt="Zayedur rahman Sabbir" />
+            <Img
+              as={motion.img}
+              animate={{
+                opacity: 1,
+                transition: {
+                  duration: 1,
+                  ease: "easeInOut",
+                },
+              }}
+              initial={{ opacity: 0 }}
+              src={Model}
+              alt="Zayedur rahman Sabbir"
+            />
           </ForImg>
           <ForText>
             <Headline>
