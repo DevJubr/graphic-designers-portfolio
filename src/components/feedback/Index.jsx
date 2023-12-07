@@ -4,8 +4,10 @@ import {
   ComponentHeadderWrapper,
   Headline,
 } from "../../utils/forStyled";
+import { useState } from "react";
 
 const FeedBacks = () => {
+  const [show, setshow] = useState(false);
   const feedBacks = [
     {
       clint: "junayed chowdhury",
@@ -64,7 +66,7 @@ const FeedBacks = () => {
           <ComponentHeadderWrapper>
             <Headline>What people say about me.</Headline>
           </ComponentHeadderWrapper>
-          <Feedbacks>
+          <Feedbacks seeall={show}>
             {feedBacks.map((item, index) => (
               <Fidback key={index}>
                 <InfoPart>
@@ -129,7 +131,9 @@ const FeedBacks = () => {
             ))}
 
             <BtnWapper>
-              <Button>show more</Button>
+              <Button onClick={() => setshow((prev) => !prev)}>
+                show more
+              </Button>
             </BtnWapper>
           </Feedbacks>
         </Warpper>
@@ -169,7 +173,7 @@ const Feedbacks = styled.div`
   gap: 3rem;
   width: 100%;
   justify-content: center;
-  height: 600px;
+  height: ${(props) => (props.seeall === true ? "auto" : "600px")};
   overflow-y: hidden;
   position: relative;
 `;
