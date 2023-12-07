@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Container } from "../../utils/forStyled";
+import { motion } from "framer-motion";
 const Specialities = () => {
   const Specialities_box = [
     {
@@ -22,7 +23,12 @@ const Specialities = () => {
   return (
     <>
       <Container>
-        <Wrapper>
+        <Wrapper
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <ComponentHeadderWrapper>
             <Headline>Specialities</Headline>
             <Subline>
