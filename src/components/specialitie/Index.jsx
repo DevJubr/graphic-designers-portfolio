@@ -5,16 +5,19 @@ const Specialities = () => {
   const Specialities_box = [
     {
       name: "Logo Design",
+      bg: true,
       icon: "polymer",
       sub: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ab ipsum eligendi. Iste, dicta nesciunt.",
     },
     {
       name: "Brand Identity",
+      bg: false,
       icon: "fingerprint",
       sub: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ab ipsum eligendi. Iste, dicta nesciunt.",
     },
     {
       name: "Illustrator Expart",
+      bg: false,
       icon: "landscape",
       sub: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ab ipsum eligendi. Iste, dicta nesciunt.",
     },
@@ -27,7 +30,7 @@ const Specialities = () => {
           as={motion.div}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 5 }}
         >
           <ComponentHeadderWrapper>
             <Headline>Specialities</Headline>
@@ -40,7 +43,7 @@ const Specialities = () => {
           </ComponentHeadderWrapper>
           <BoxWrapper>
             {Specialities_box.map((item, index) => (
-              <Box key={index}>
+              <Box activeBg={item.bg} key={index}>
                 <Icon>
                   <span class="material-symbols-outlined">{item.icon}</span>
                 </Icon>
@@ -125,7 +128,10 @@ const Box = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 1.3rem;
-  background: #1e1e1e;
+  background: ${(props) =>
+    props.activeBg
+      ? "linear-gradient(180deg, #ff8660 0%, #d5491d 100%)"
+      : "#1e1e1e"};
   border-radius: 0.5rem;
   justify-content: space-evenly;
 
