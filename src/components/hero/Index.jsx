@@ -69,6 +69,7 @@ const HeroSection = () => {
           </ForText>
           <ForButton>
             <Button>get it touch.</Button>
+
             <WithborderButton>view al works.</WithborderButton>
           </ForButton>
         </Wrapper>

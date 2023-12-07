@@ -69,7 +69,9 @@ const Projects = () => {
                     <Icon href={ITEM.link}>Click to view</Icon>
                     <BoxTitle>{ITEM.title}</BoxTitle>
                   </VisiteProject>
-                  <span class="material-symbols-outlined">arrow_outward</span>
+                  <span className="material-symbols-outlined">
+                    arrow_outward
+                  </span>
                 </TextArea>
               </Project>
             ))}
@@ -88,6 +90,7 @@ const Wraapeer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  padding: 5rem 0 1rem 0;
 `;
 
 const ProjectBoxWarpper = styled.div`
