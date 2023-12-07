@@ -7,7 +7,6 @@
   list-style: none;
   text-decoration: none;
   color: #e9f2ff;
-  background-color: #161513;
 }
 /* :root {
   color-scheme: light dark;
@@ -32,9 +31,9 @@ span {
   font-weight: 300;
 }
 
-/* body {
-
-} */
+body {
+  background-color: #161513;
+}
 
 h1,
 h2,
