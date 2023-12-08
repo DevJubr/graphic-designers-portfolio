@@ -118,6 +118,9 @@ const Footer = styled.footer`
   letter-spacing: 1px;
   border-top: 0.5px solid #454545dd;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Wrapper = styled.div`
@@ -132,7 +135,7 @@ const FooterLeft = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.66rem;
 
   span {
     font-size: 0.8rem;

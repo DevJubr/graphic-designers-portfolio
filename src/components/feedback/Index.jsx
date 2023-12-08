@@ -153,7 +153,8 @@ const Img = styled.img`
 `;
 
 const Warpper = styled.div`
-  padding: 4rem 0 4rem 0;
+  /* padding: 6.3rem 0; */
+  /* padding-bottom: 3rem; */
   width: 100%;
   display: flex;
   flex-direction: column;

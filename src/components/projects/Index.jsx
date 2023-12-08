@@ -80,7 +80,7 @@ const Wraapeer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  padding: 5rem 0 1rem 0;
+  padding: 6.3rem 0;
 `;
 
 const ProjectBoxWarpper = styled.div`

@@ -118,7 +118,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3rem 0;
+  padding: 4rem 0;
   gap: 3rem;
   @media screen and (max-width: 710px) {
     width: 100%;
@@ -126,7 +126,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem 0;
+    padding-top: 2.5rem;
     gap: 3rem;
   }
 `;

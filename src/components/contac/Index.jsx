@@ -87,7 +87,7 @@ const WapperOfFather = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0;
+  padding: 6rem 0;
 `;
 const Subline = styled.div`
   display: flex;

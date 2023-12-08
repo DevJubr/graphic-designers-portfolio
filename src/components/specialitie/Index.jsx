@@ -73,7 +73,7 @@ const Wrapper = styled.div`
   justify-content: center;
   width: 100%;
   gap: 3.8rem;
-  padding: 2rem 0;
+  padding-top: 2.5rem;
 `;
 
 const BoxWrapper = styled.div`

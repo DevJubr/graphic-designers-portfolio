@@ -20,8 +20,8 @@ const AppBar = () => {
     },
   ];
   return (
-    <nav>
-      <Container>
+    <Container>
+      <Nav>
         <Wrapper>
           <NavLeft>
             <NavLogo>
@@ -41,8 +41,8 @@ const AppBar = () => {
             </NavButton>
           </div>
         </Wrapper>
-      </Container>
-    </nav>
+      </Nav>
+    </Container>
   );
 };
 
@@ -141,5 +141,15 @@ const NavItem = styled.li`
     background: none;
     color: black;
     font-size: 0.6rem;
+  }
+`;
+const Nav = styled.nav`
+  width: unset;
+  display: unset;
+  @media screen and (max-width: 710px) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
