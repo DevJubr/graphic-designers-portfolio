@@ -1,4 +1,10 @@
 import styled from "styled-components";
+import Jakbed from "../../assets/client/jakbed.jpeg";
+import Client0 from "../../assets/client/client0.jpg";
+import Client1 from "../../assets/client/client1.jpg";
+import Client2 from "../../assets/client/client2.jpg";
+import Client3 from "../../assets/client/client3.jpg";
+
 import {
   Container,
   ComponentHeadderWrapper,
@@ -10,52 +16,35 @@ const FeedBacks = () => {
   const [show, setshow] = useState(false);
   const feedBacks = [
     {
-      clint: "junayed chowdhury",
-      pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
+      clint: "Andreea Cotuna",
+      pic: Client0,
       massage:
-        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        "It's been a wonderful experience working with Jayedur. His communication is great, he is very prompt and always on top of things. I would highly recommend his services and quality work.",
     },
     {
-      clint: "junayed chowdhury",
-      pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
+      clint: "Jack Bade",
+      pic: Jakbed,
       massage:
-        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        "Jayed was incredible to work with, he is responsive with a great attention to detail. He was patient and understanding with alterations that were needing for different samples. We will definately use Jayed again.",
     },
     {
-      clint: "junayed chowdhury",
-      pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
+      clint: "Rodas Mekonnen",
+      pic: Client1,
       massage:
-        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        "Jayed has yet again excelled! We decided to get some designs for work cars and also for bumper stickers as advertising and we are so happy. We will continue to work with Jayed in the future! Thanks",
     },
     {
-      clint: "junayed chowdhury",
-      pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
+      clint: "Iris Cas",
+      pic: Client2,
       massage:
-        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        "Absolutely thrilled with Jayedur's outstanding work! We sought designs for our company's Branding fleet Logo for promotional purpose and count us in as long-term partners with Jayedur. Thank you!",
     },
+
     {
-      clint: "junayed chowdhury",
-      pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
+      clint: "Bade PN ",
+      pic: Client3,
       massage:
-        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
-    },
-    {
-      clint: "junayed chowdhury",
-      pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
-      massage:
-        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
-    },
-    {
-      clint: "junayed chowdhury",
-      pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
-      massage:
-        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
-    },
-    {
-      clint: "junayed chowdhury",
-      pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
-      massage:
-        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        "Jayedur was extremely easy to work with, We will definitely be using his services again in the future. I would highly highly recommend working together!! He completely understood what we were after and his designs were great. He clearly communicated his timeline for completion of each step and turned around the work very quickly. Having clear communication meant it was very easy to make changes and he quickly revised the designs.",
     },
   ];
 

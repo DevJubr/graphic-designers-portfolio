@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import Project0 from "../../assets/projects/project0.png";
+import Project1 from "../../assets/projects/project1.png";
+import Project2 from "../../assets/projects/project2.png";
 import {
   Container,
   ComponentHeadderWrapper,
@@ -10,32 +13,19 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
-      title: "landing pg",
-      link: "#",
-      poster:
-        "https://cdn.dribbble.com/users/5883067/screenshots/15150235/media/a1ae1d1bdfe5c66a652abb7e3cf085eb.png",
-      // alt: this.title,
+      title: "restaurent logo.",
+      link: "https://www.behance.net/gallery/186157913/Restaurant-Logo",
+      poster: Project0,
     },
     {
-      title: "landing pg",
-      link: "#",
-      poster:
-        "https://cdn.dribbble.com/users/5883067/screenshots/15150235/media/a1ae1d1bdfe5c66a652abb7e3cf085eb.png",
-      // alt: this.title,
+      title: "branding.",
+      link: "https://www.behance.net/gallery/183205043/CRM-tools",
+      poster: Project1,
     },
     {
-      title: "landing pg",
-      link: "#",
-      poster:
-        "https://cdn.dribbble.com/users/5883067/screenshots/15150235/media/a1ae1d1bdfe5c66a652abb7e3cf085eb.png",
-      // alt: this.title,
-    },
-    {
-      title: "landing pg",
-      link: "#",
-      poster:
-        "https://cdn.dribbble.com/users/5883067/screenshots/15150235/media/a1ae1d1bdfe5c66a652abb7e3cf085eb.png",
-      // alt: this.title,
+      title: "stationery products.",
+      link: "https://www.behance.net/gallery/184819099/Stationery",
+      poster: Project2,
     },
   ];
 
@@ -125,12 +115,15 @@ const Img = styled.img`
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
   object-fit: cover;
+  height: 100%;
 `;
 
 const Imgrea = styled.div`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 225.3px;
 `;
 
 const TextArea = styled.div`
