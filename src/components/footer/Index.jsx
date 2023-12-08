@@ -98,6 +98,12 @@ const LogoS = styled.div`
     width: 50px;
     height: 50px;
   }
+  @media screen and (max-width: 450px) {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
 `;
 
 const Footer = styled.footer`
@@ -108,7 +114,7 @@ const Footer = styled.footer`
 `;
 
 const Wrapper = styled.div`
-  width: 100%;
+  width: 98%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -123,6 +129,11 @@ const FooterLeft = styled.div`
 
   span {
     font-size: 0.8rem;
+  }
+  @media screen and (max-width: 450px) {
+    span {
+      font-size: 0.5rem;
+    }
   }
 `;
 
@@ -140,6 +151,11 @@ const FooterMenu = styled.ul`
   li {
     font-size: 0.9rem;
   }
+  @media screen and (max-width: 450px) {
+    li {
+      font-size: 0.6rem;
+    }
+  }
 `;
 
 const FooterSocial = styled.ul`
@@ -155,6 +171,16 @@ const FooterSocial = styled.ul`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  @media screen and (max-width: 450px) {
+    li {
+      width: 24px;
+      height: 24px;
+      svg {
+        width: 13px;
+        height: 13px;
+      }
+    }
   }
 `;
 
