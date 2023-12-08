@@ -74,8 +74,8 @@ const Wapper = styled.div`
   }
   @media screen and (max-width: 990px) {
     width: 95%;
-    gap: 1rem;
-    padding: 2rem;
+    gap: 1.4rem;
+    padding: 2.4rem;
     h2 {
       font-size: 1.6rem;
     }
