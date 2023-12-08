@@ -94,6 +94,7 @@ const FooterLeft = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding-bottom: 0.5rem;
 
   span {
     font-size: 0.8rem;
@@ -111,6 +112,9 @@ const FooterMenu = styled.ul`
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  li {
+    font-size: 0.8rem;
+  }
 `;
 
 const FooterSocial = styled.ul`
@@ -119,8 +123,8 @@ const FooterSocial = styled.ul`
   gap: 1rem;
 
   li {
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
     background-image: linear-gradient(138deg, #ff8660 9.86%, #8000ff 104.95%);
     border-radius: 50%;
     display: flex;

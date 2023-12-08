@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "../../utils/forStyled";
 import styled from "styled-components";
-import Model from "../../assets/model.jpg";
+import Hero from "../../assets/hero.jpeg";
 import { motion } from "framer-motion";
 const HeroSection = () => {
   return (
@@ -19,7 +19,7 @@ const HeroSection = () => {
                 },
               }}
               initial={{ opacity: 0 }}
-              src={Model}
+              src={Hero}
               alt="Zayedur rahman Sabbir"
             />
           </ForImg>
@@ -69,9 +69,14 @@ const HeroSection = () => {
             </Subline>
           </ForText>
           <ForButton>
-            <Button>get it touch.</Button>
+            <Button
+              href="https://www.upwork.com/freelancers/gfxjayed"
+              target="_blank"
+            >
+              hire me.
+            </Button>
 
-            <WithborderButton>view al works.</WithborderButton>
+            <WithborderButton href="#projects">view al works.</WithborderButton>
           </ForButton>
         </Wrapper>
       </Container>
@@ -198,7 +203,7 @@ const ForButton = styled.div`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   text-transform: uppercase;
   letter-spacing: 1px;
   background: aliceblue;

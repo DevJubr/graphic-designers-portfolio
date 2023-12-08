@@ -12,19 +12,19 @@ const Specialities = () => {
       name: "Logo Design",
       bg: "true",
       icon: "polymer",
-      sub: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ab ipsum eligendi. Iste, dicta nesciunt.",
+      sub: "In logo design, I create impactful brand identities, merging creativity with strategy to craft memorable and versatile logos for diverse clients.",
     },
     {
       name: "Brand Identity",
       bg: "false",
       icon: "fingerprint",
-      sub: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ab ipsum eligendi. Iste, dicta nesciunt.",
+      sub: "Crafting impactful brand identities, I merge creativity and strategy to create memorable visual representations for brands.",
     },
     {
       name: "Illustrator Expart",
       bg: "false",
       icon: "landscape",
-      sub: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ab ipsum eligendi. Iste, dicta nesciunt.",
+      sub: "Mastering Illustrator, I create intricate and stunning designs, leveraging its tools to produce visually captivating artwork",
     },
   ];
 
@@ -39,12 +39,11 @@ const Specialities = () => {
           viewport={{ once: true }}
         >
           <ComponentHeadderWrapper>
-            <Headline>Specialities</Headline>
+            <Headline>Specialize in</Headline>
             <Subline>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-              repellendus possimus sed tempora porro nisi illum, officia
-              perspiciatis officiis illo ipsam quis dolorum deserunt. Officiis
-              expedita magni nisi quia laborum.
+              I begin by deeply understanding brand values, translating them
+              into impactful visuals, ensuring consistency and resonance across
+              brand identity, logo, and stationery or product design.
             </Subline>
           </ComponentHeadderWrapper>
           <BoxWrapper>

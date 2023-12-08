@@ -40,7 +40,7 @@ const Projects = () => {
   ];
 
   return (
-    <>
+    <section id="projects">
       <Container>
         <Wraapeer
           as={motion.div}
@@ -78,7 +78,7 @@ const Projects = () => {
           </ProjectBoxWarpper>
         </Wraapeer>
       </Container>
-    </>
+    </section>
   );
 };
 

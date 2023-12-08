@@ -36,7 +36,9 @@ const AppBar = () => {
             </NavMenuWrapper>
           </NavLeft>
           <div className="navRight">
-            <NavButton>Let's Talk.</NavButton>
+            <NavButton href="https://wa.link/nsyarc" target="_blank">
+              Let's Talk.
+            </NavButton>
           </div>
         </Wrapper>
       </Container>
@@ -113,7 +115,7 @@ const NavMenu = styled.ul`
   }
 `;
 
-export const NavButton = styled.button`
+export const NavButton = styled.a`
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1rem;
