@@ -2,12 +2,19 @@ import { Container } from "../../utils/forStyled";
 import Emoji from "../../assets/emoji.png";
 import { NavButton } from "../appBar";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <>
       <Container>
-        <WapperOfFather>
+        <WapperOfFather
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 3.5 }}
+          viewport={{ once: true }}
+        >
           <Wapper>
             <EmojiWpper>
               <img src={Emoji} alt="" />

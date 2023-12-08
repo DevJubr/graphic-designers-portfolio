@@ -11,6 +11,7 @@ import {
   Headline,
 } from "../../utils/forStyled";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 const FeedBacks = () => {
   const [show, setshow] = useState(false);
@@ -51,7 +52,13 @@ const FeedBacks = () => {
   return (
     <>
       <Container>
-        <Warpper>
+        <Warpper
+          as={motion.div}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 3.5 }}
+          viewport={{ once: true }}
+        >
           <ComponentHeadderWrapper>
             <Headline>What people say about me.</Headline>
           </ComponentHeadderWrapper>

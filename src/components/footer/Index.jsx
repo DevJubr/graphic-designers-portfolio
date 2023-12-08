@@ -1,11 +1,18 @@
 import { Container } from "../../utils/forStyled";
 import Logo from "../../assets/logo.png";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const FooterComponent = () => {
   return (
     <Container>
-      <Footer>
+      <Footer
+        as={motion.footer}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 2.5 }}
+        viewport={{ once: true }}
+      >
         <Wrapper>
           <FooterLeft>
             <LogoS>

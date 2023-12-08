@@ -36,7 +36,7 @@ const Projects = () => {
           as={motion.div}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 5 }}
+          transition={{ duration: 3.5 }}
           viewport={{ once: true }}
         >
           <ComponentHeadderWrapper>
