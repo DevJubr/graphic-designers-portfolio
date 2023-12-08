@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Container } from "../../utils/forStyled";
-
+import Logo from "../../assets/logo.png";
 const AppBar = () => {
   const nav_items = [
     {
@@ -24,7 +24,9 @@ const AppBar = () => {
       <Container>
         <Wrapper>
           <NavLeft>
-            <NavLogo>Zayed</NavLogo>
+            <NavLogo>
+              <img src={Logo} alt="logo" />
+            </NavLogo>
             <NavMenuWrapper>
               <NavMenu>
                 {nav_items.map((item, index) => (
@@ -52,7 +54,7 @@ const Wrapper = styled.div`
   padding: 1.5rem 0;
   @media screen and (max-width: 710px) {
     display: flex;
-    width: 100%;
+    width: 95%;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 0;
@@ -74,6 +76,10 @@ const NavLogo = styled.h2`
   letter-spacing: 2px;
   font-weight: 200;
   font-size: 2.5rem;
+  img {
+    width: 50px;
+    height: 50px;
+  }
   @media screen and (max-width: 710px) {
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -107,7 +113,7 @@ const NavMenu = styled.ul`
   }
 `;
 
-const NavButton = styled.button`
+export const NavButton = styled.button`
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1rem;
@@ -118,7 +124,7 @@ const NavButton = styled.button`
   @media screen and (max-width: 710px) {
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     background: aliceblue;
     color: black;
     padding: 0.6rem 1rem;

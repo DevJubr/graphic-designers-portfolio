@@ -35,9 +35,9 @@ const HeroSection = () => {
                 }}
                 initial={{ opacity: 0 }}
               >
-                hello! I am Zayexd,
+                Designing Tomorrow's World, Today!
               </ColorfulText>
-              <motion.h1
+              {/* <motion.h1
                 animate={{
                   opacity: 1,
                   transition: {
@@ -48,7 +48,7 @@ const HeroSection = () => {
                 initial={{ opacity: 0 }}
               >
                 ceative graphic designer based in vangladesh.
-              </motion.h1>
+              </motion.h1> */}
             </Headline>
             <Subline>
               <motion.p
@@ -61,9 +61,10 @@ const HeroSection = () => {
                 }}
                 initial={{ opacity: 0 }}
               >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Reprehenderit corporis similique quam quasi, veniam aspernatur
-                optio. Corrupti accusamus tempore quo.
+                Embark on a visual journey with Jayed, experiencing the fusion
+                of creativity and functionality in logos, brand identities,
+                stationery, and illustrations. Discover four years of Zayed's
+                design innovation.
               </motion.p>
             </Subline>
           </ForText>
@@ -99,7 +100,7 @@ const Img = styled.img`
   /* border-image: linear-gradient(138deg, #7aff60 9.86%, #ea00ff 104.95%) 1;
   border-style: solid;
   border-width: 4px; */
-  /* border: 2px solid #ddd; */
+
   @media screen and (max-width: 710px) {
     width: 200px;
     height: 200px;
@@ -174,7 +175,7 @@ const Subline = styled.div`
     text-align: center;
     width: 50%;
     font-size: 1rem;
-    line-height: 1.22rem;
+    line-height: 1.48rem;
   }
   @media screen and (max-width: 710px) {
     p {

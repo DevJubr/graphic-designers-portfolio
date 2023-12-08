@@ -13,49 +13,49 @@ const FeedBacks = () => {
       clint: "junayed chowdhury",
       pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
       massage:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
     },
     {
       clint: "junayed chowdhury",
       pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
       massage:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
     },
     {
       clint: "junayed chowdhury",
       pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
       massage:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
     },
     {
       clint: "junayed chowdhury",
       pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
       massage:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
     },
     {
       clint: "junayed chowdhury",
       pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
       massage:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
     },
     {
       clint: "junayed chowdhury",
       pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
       massage:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
     },
     {
       clint: "junayed chowdhury",
       pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
       massage:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
     },
     {
       clint: "junayed chowdhury",
       pic: "https://as2.ftcdn.net/v2/jpg/01/77/47/67/1000_F_177476718_VWfYMWCzK32bfPI308wZljGHvAUYSJcn.jpg",
       massage:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit dolores reprehenderit repellat libero eligendi consequuntur aspernatur sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
+        " sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?  sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex? sapiente, labore fuga incidunt ad hic repellendus odit ipsam ipsa culpa molestias est ex?",
     },
   ];
 
@@ -130,7 +130,7 @@ const FeedBacks = () => {
               </Fidback>
             ))}
 
-            <BtnWapper>
+            <BtnWapper seeall={show}>
               <Button onClick={() => setshow((prev) => !prev)}>
                 show more
               </Button>
@@ -188,7 +188,7 @@ const Fidback = styled.div`
   align-items: flex-start;
   gap: 2rem;
   @media screen and (max-width: 990px) {
-    width: 100%;
+    width: 95%;
   }
 `;
 
@@ -232,20 +232,25 @@ const BtnWapper = styled.div`
   bottom: -3%;
   width: 100%;
   padding: 2rem 0;
-  background: linear-gradient(180deg, #1e1e1e52 0%, #161513 100%);
+  background: linear-gradient(180deg, #1e1e1e3d 0%, #161513 100%);
   z-index: 9999;
-  display: flex;
+  display: ${(props) => (props.seeall === true ? "none" : "flex")};
   align-items: center;
   justify-content: center;
 `;
 
 const Button = styled.button`
-  background: linear-gradient(180deg, #5badff 0%, #1373d1 100%);
+  /* background: linear-gradient(180deg, #5badff 0%, #1373d1 100%); */
+  background: linear-gradient(180deg, #ff8660 0%, #d5491d 100%);
+
   padding: 0.8rem 1.4rem;
   font-size: 1rem;
   border-radius: 2rem;
   text-transform: capitalize;
   letter-spacing: 1px;
+  @media screen and (max-width: 990px) {
+    font-size: 0.76rem;
+  }
 `;
 
 export default FeedBacks;

@@ -18,10 +18,11 @@ export const ComponentHeadderWrapper = styled.div`
   }
 
   @media screen and (max-width: 680px) {
-    width: 100%;
+    width: 96%;
   }
 `;
 export const Headline = styled.h2`
+  width: 100%;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 1.5px;
