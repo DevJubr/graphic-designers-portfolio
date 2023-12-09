@@ -1,13 +1,16 @@
-import Express from "express";
+const Express = require("express");
+const Path = require("path");
 
 const App = Express();
 
-App.get("/", (req, res) => {
-  res.send("hi ");
+App.use(Express.static(Path.join(__dirname, "../dist")));
+
+App.get("*", (req, res) => {
+  res.sendFile(Path.resolve(__dirname, "../", "dist", "index.html"));
 });
 
 App.listen(5000, () => {
   console.log("server runing on port 5000");
 });
 
-export default App;
+module.exports = App;
