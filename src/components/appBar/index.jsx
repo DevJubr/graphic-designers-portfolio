@@ -5,18 +5,15 @@ const AppBar = () => {
   const nav_items = [
     {
       item: "home",
+      path: "/",
     },
     {
       item: "service",
+      path: "#service",
     },
     {
       item: "project",
-    },
-    {
-      item: "about",
-    },
-    {
-      item: "blog",
+      path: "#project",
     },
   ];
   return (
@@ -30,7 +27,9 @@ const AppBar = () => {
             <NavMenuWrapper>
               <NavMenu>
                 {nav_items.map((item, index) => (
-                  <NavItem key={index}>{item.item}</NavItem>
+                  <NavItem key={index}>
+                    <a href={item.path}>{item.item}</a>
+                  </NavItem>
                 ))}
               </NavMenu>
             </NavMenuWrapper>

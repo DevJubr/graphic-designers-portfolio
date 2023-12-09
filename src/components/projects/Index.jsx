@@ -30,7 +30,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects">
+    <section id="project">
       <Container>
         <Wraapeer
           as={motion.div}

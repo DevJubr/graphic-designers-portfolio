@@ -63,7 +63,7 @@ const HeroSection = () => {
               >
                 Embark on a visual journey with Jayed, experiencing the fusion
                 of creativity and functionality in logos, brand identities,
-                stationery, and illustrations. Discover four years of Zayed's
+                stationery, and illustrations. Discover four years of Jayed's
                 design innovation.
               </motion.p>
             </Subline>

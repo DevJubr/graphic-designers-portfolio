@@ -29,7 +29,7 @@ const Specialities = () => {
   ];
 
   return (
-    <>
+    <section id="service">
       <Container>
         <Wrapper
           as={motion.div}
@@ -59,7 +59,7 @@ const Specialities = () => {
           </BoxWrapper>
         </Wrapper>
       </Container>
-    </>
+    </section>
   );
 };
 
