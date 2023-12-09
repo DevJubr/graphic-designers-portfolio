@@ -3,8 +3,14 @@ import Emoji from "../../assets/emoji.png";
 import { NavButton } from "../appBar";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const Contact = () => {
+  const submitHendel = () => {
+    const mailToLink = `mailto:gfxjayed@gmail.com?subject=Subject&body=Enter Your Message`;
+    window.location.href = mailToLink;
+  };
+
   return (
     <section id="contact">
       <Container>
@@ -29,7 +35,11 @@ const Contact = () => {
                 Your ideas combined with our knowledge equals success.
               </p>
             </Subline>
-            <div className="button">
+            <div
+              className="button"
+              style={{ cursor: "pointer", zIndex: "999" }}
+              onClick={() => submitHendel()}
+            >
               <NavButton>Let's Talk.</NavButton>
             </div>
           </Wapper>
@@ -42,6 +52,7 @@ const Contact = () => {
 export default Contact;
 
 // ----------- styled -------------
+//
 
 const EmojiWpper = styled.div`
   img {

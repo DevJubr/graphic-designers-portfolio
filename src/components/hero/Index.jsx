@@ -76,7 +76,7 @@ const HeroSection = () => {
               hire me.
             </Button>
 
-            <WithborderButton href="#projects">view al works.</WithborderButton>
+            <WithborderButton href="#project">view al works.</WithborderButton>
           </ForButton>
         </Wrapper>
       </Container>
