@@ -42,10 +42,9 @@ const Projects = () => {
           <ComponentHeadderWrapper>
             <Headline>Look at my projects</Headline>
             <Subline>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit
-              atque voluptate aperiam dicta modi sapiente, consequuntur
-              repellat? Necessitatibus hic soluta, atque molestiae consequatur
-              quibusdam mollitia commodi facere harum quisquam repudiandae.
+              Exploring my diverse portfolio – a showcase of passion,
+              creativity, and skills. Dive into my projects and witness the
+              fusion of innovation and dedication in action.
             </Subline>
           </ComponentHeadderWrapper>
           <ProjectBoxWarpper>
@@ -57,11 +56,13 @@ const Projects = () => {
                 <TextArea>
                   <VisiteProject>
                     <Icon href={ITEM.link}>Click to view</Icon>
-                    <BoxTitle>{ITEM.title}</BoxTitle>
+                    <BoxTitle href={ITEM.link}>{ITEM.title}</BoxTitle>
                   </VisiteProject>
-                  <span className="material-symbols-outlined">
-                    arrow_outward
-                  </span>
+                  <a href={ITEM.link}>
+                    <span className="material-symbols-outlined">
+                      arrow_outward
+                    </span>
+                  </a>
                 </TextArea>
               </Project>
             ))}
@@ -157,7 +158,7 @@ const Icon = styled.a`
   font-size: 0.6rem;
 `;
 
-const BoxTitle = styled.h4`
+const BoxTitle = styled.a`
   font-size: 1.1rem;
   font-weight: 500;
 `;
