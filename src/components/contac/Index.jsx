@@ -3,7 +3,6 @@ import Emoji from "../../assets/emoji.png";
 import { NavButton } from "../appBar";
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
 
 const Contact = () => {
   const submitHendel = () => {
