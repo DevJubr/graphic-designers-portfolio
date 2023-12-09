@@ -15,6 +15,10 @@ const AppBar = () => {
       item: "project",
       path: "#project",
     },
+    {
+      item: "contact",
+      path: "#contact",
+    },
   ];
   return (
     <Container>

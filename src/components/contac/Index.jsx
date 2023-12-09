@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <>
+    <section id="contact">
       <Container>
         <WapperOfFather
           as={motion.div}
@@ -35,7 +35,7 @@ const Contact = () => {
           </Wapper>
         </WapperOfFather>
       </Container>
-    </>
+    </section>
   );
 };
 
