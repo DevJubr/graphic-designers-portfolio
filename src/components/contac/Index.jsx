@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 const Contact = () => {
   const submitHendel = () => {
-    const mailToLink = `mailto:gfxjayed@gmail.com?subject=Subject&body=Enter Your Message`;
+    const mailToLink = `mailto:gfxjayed@gmail.com?subject=Enter Your Subject&body=Enter Your Message`;
     window.location.href = mailToLink;
   };
 
