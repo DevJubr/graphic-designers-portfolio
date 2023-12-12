@@ -1,9 +1,15 @@
 import React from "react";
 import { Container } from "../../utils/forStyled";
 import styled from "styled-components";
+
+import { useDisclosure } from "@mantine/hooks";
+import { Modal } from "@mantine/core";
+import Abtme from "../../assets/abtme.jpg";
 import Hero from "../../assets/hero.jpeg";
 import { motion } from "framer-motion";
 const HeroSection = () => {
+  const [opened, { open, close }] = useDisclosure(false);
+
   return (
     <section>
       <Container>
@@ -37,18 +43,6 @@ const HeroSection = () => {
               >
                 Designing Tomorrow's World, Today!
               </ColorfulText>
-              {/* <motion.h1
-                animate={{
-                  opacity: 1,
-                  transition: {
-                    duration: 1,
-                    ease: "easeInOut",
-                  },
-                }}
-                initial={{ opacity: 0 }}
-              >
-                ceative graphic designer based in vangladesh.
-              </motion.h1> */}
             </Headline>
             <Subline>
               <motion.p
@@ -69,14 +63,33 @@ const HeroSection = () => {
             </Subline>
           </ForText>
           <ForButton>
-            <Button
+            <ButtonS
               href="https://www.upwork.com/freelancers/gfxjayed"
               target="_blank"
             >
               hire me.
-            </Button>
+            </ButtonS>
 
-            <WithborderButton href="#project">view al works.</WithborderButton>
+            {/* 
+            
+            
+            */}
+
+            <Modal
+              style={{ background: "#1e1e1e !important" }}
+              opened={opened}
+              onClose={close}
+              title="About Me"
+              centered
+            >
+              <img
+                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                src={Abtme}
+                alt="About jayed"
+              />
+            </Modal>
+
+            <WithborderButton onClick={open}>about me.</WithborderButton>
           </ForButton>
         </Wrapper>
       </Container>
@@ -203,7 +216,7 @@ const ForButton = styled.div`
   }
 `;
 
-const Button = styled.a`
+const ButtonS = styled.a`
   text-transform: uppercase;
   letter-spacing: 1px;
   background: aliceblue;
@@ -224,7 +237,7 @@ const Button = styled.a`
   }
 `;
 
-const WithborderButton = styled(Button)`
+const WithborderButton = styled(ButtonS)`
   background: none;
   color: aliceblue;
   border: 2px solid aliceblue;

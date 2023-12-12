@@ -63,3 +63,27 @@ h1 {
     font-size: 3.5rem !important;
   }
 }
+
+div.m-60c222c7.m-1f958f16.mantine-Modal-inner
+  > section
+  > div.m-b5489c3c.m-d0e2b9cd.mantine-Modal-header
+  h2 {
+  color: aliceblue !important;
+}
+.mantine-Modal-header {
+  background: #161513 !important;
+}
+.mantine-Modal-content {
+  background: #161513 !important;
+}
+div.m-b5489c3c.m-d0e2b9cd.mantine-Modal-header > button,
+.m-86a44da5 {
+  border: none !important;
+}
+div.m-b5489c3c.m-d0e2b9cd.mantine-Modal-header > button:hover {
+  background: none !important;
+}
+.mantine-Modal-header button {
+  border: none !important;
+  background: none !important;
+}
