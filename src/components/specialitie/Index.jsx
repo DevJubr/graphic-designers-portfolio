@@ -9,19 +9,19 @@ import { motion } from "framer-motion";
 const Specialities = () => {
   const Specialities_box = [
     {
-      name: "Logo Design",
+      name: " Logo & brand identity Design",
       bg: "true",
       icon: "polymer",
       sub: "In logo design, I create impactful brand identities, merging creativity with strategy to craft memorable and versatile logos for diverse clients.",
     },
     {
-      name: "Brand Identity",
+      name: " Social Media Design",
       bg: "false",
       icon: "fingerprint",
       sub: "Crafting impactful brand identities, I merge creativity and strategy to create memorable visual representations for brands.",
     },
     {
-      name: "Illustrator Expart",
+      name: "Ai & PS Expart",
       bg: "false",
       icon: "landscape",
       sub: "Mastering Illustrator, I create intricate and stunning designs, leveraging its tools to produce visually captivating artwork",
