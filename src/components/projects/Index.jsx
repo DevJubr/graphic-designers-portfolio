@@ -23,7 +23,7 @@ const Projects = () => {
       poster: Project1,
     },
     {
-      title: "stationery products.",
+      title: "Social media Design.",
       link: "https://www.behance.net/gallery/184819099/Stationery",
       poster: Project2,
     },

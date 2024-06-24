@@ -4,6 +4,7 @@ import Client0 from "../../assets/client/client0.jpg";
 import Client1 from "../../assets/client/client1.jpg";
 import Client2 from "../../assets/client/client2.jpg";
 import Client3 from "../../assets/client/client3.jpg";
+import nClient from "../../assets/client/nClient.png";
 
 import {
   Container,
@@ -46,6 +47,12 @@ const FeedBacks = () => {
       pic: Client3,
       massage:
         "Jayedur was extremely easy to work with, We will definitely be using his services again in the future. I would highly highly recommend working together!! He completely understood what we were after and his designs were great. He clearly communicated his timeline for completion of each step and turned around the work very quickly. Having clear communication meant it was very easy to make changes and he quickly revised the designs.",
+    },
+    {
+      clint: "Samim Sagir",
+      pic: nClient,
+      massage:
+        "Md Jayedur, was a pleasure to work with. He not only has great innovative design skills but also really worked with me to bring my vision to light. I didn't just want a pretty colourful logo, but a brand identity which would show and stand for my business. The design captures my brand identity allowing my business to stand out from the rest",
     },
   ];
 
@@ -166,8 +173,8 @@ const Warpper = styled.div`
 const Feedbacks = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 3rem;
+  align-items: start;
+  gap: 1rem;
   width: 100%;
   justify-content: center;
   height: ${(props) => (props.seeall === true ? "auto" : "600px")};
