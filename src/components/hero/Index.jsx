@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { useDisclosure } from "@mantine/hooks";
 import { Modal } from "@mantine/core";
 import Abtme from "../../assets/abtme.jpg";
-import Hero from "../../assets/hero.jpeg";
+import Hero from "../../assets/hero1.jpg";
 import { motion } from "framer-motion";
 const HeroSection = () => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -29,6 +29,7 @@ const HeroSection = () => {
               alt="Zayedur rahman Sabbir"
             />
           </ForImg>
+
           <ForText>
             <Headline>
               <ColorfulText
@@ -61,36 +62,37 @@ const HeroSection = () => {
                 design innovation.
               </motion.p>
             </Subline>
-          </ForText>
-          <ForButton>
-            <ButtonS
-              href="https://www.upwork.com/freelancers/gfxjayed"
-              target="_blank"
-            >
-              hire me.
-            </ButtonS>
 
-            {/* 
+            <ForButton>
+              <ButtonS
+                href="https://www.upwork.com/freelancers/gfxjayed"
+                target="_blank"
+              >
+                hire me.
+              </ButtonS>
+
+              {/* 
             
             
             */}
 
-            <Modal
-              style={{ background: "#1e1e1e !important" }}
-              opened={opened}
-              onClose={close}
-              title="About Me"
-              centered
-            >
-              <img
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                src={Abtme}
-                alt="About jayed"
-              />
-            </Modal>
+              <Modal
+                style={{ background: "#1e1e1e !important" }}
+                opened={opened}
+                onClose={close}
+                title="About Me"
+                centered
+              >
+                <img
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  src={Abtme}
+                  alt="About jayed"
+                />
+              </Modal>
 
-            <WithborderButton onClick={open}>about me.</WithborderButton>
-          </ForButton>
+              <WithborderButton onClick={open}>about me.</WithborderButton>
+            </ForButton>
+          </ForText>
         </Wrapper>
       </Container>
     </section>
@@ -111,27 +113,29 @@ const ForImg = styled.div`
 `;
 
 const Img = styled.img`
-  width: 240px;
-  height: 240px;
+  width: 500px;
+  height: 500px;
   object-fit: cover;
-  border-radius: 50%;
+  // border-radius: 50%;
   /* border-image: linear-gradient(138deg, #7aff60 9.86%, #ea00ff 104.95%) 1;
   border-style: solid;
   border-width: 4px; */
 
   @media screen and (max-width: 710px) {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 `;
 
 const Wrapper = styled.div`
   width: 100%;
   display: flex;
+  margin-top: -3rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0;
+  // padding: 4rem 0;
+  position: relative;
   gap: 3rem;
   @media screen and (max-width: 710px) {
     width: 100%;
@@ -151,6 +155,8 @@ const ForText = styled.div`
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  position: absolute;
+  bottom: -240px;
   @media screen and (max-width: 710px) {
   }
 `;
@@ -192,14 +198,15 @@ const Subline = styled.div`
     letter-spacing: 1px;
     text-align: center;
     width: 50%;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.48rem;
+    font-weight: 100;
   }
   @media screen and (max-width: 710px) {
     p {
       text-align: center;
       width: 100%;
-      font-size: 0.8rem;
+      font-size: 0.666rem;
       line-height: 1.22rem;
     }
   }
@@ -212,6 +219,7 @@ const ForButton = styled.div`
   flex-wrap: wrap;
   width: 100%;
   gap: 1rem;
+  margin-top: 1rem;
   @media screen and (max-width: 710px) {
   }
 `;
