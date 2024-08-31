@@ -46,10 +46,7 @@ const Specialities = () => {
           viewport={{ once: true }}
         >
           <ComponentHeadderWrapper state={"row"}>
-            <Headline>
-              Our <br />
-              Services
-            </Headline>
+            <Headline>Our Services</Headline>
             {/* <Subline>
               I begin by deeply understanding brand values, translating them
               into impactful visuals, ensuring consistency and resonance across
