@@ -5,7 +5,7 @@ import styled from "styled-components";
 import { useDisclosure } from "@mantine/hooks";
 import { Modal } from "@mantine/core";
 import Abtme from "../../assets/abtme.jpg";
-import Hero from "../../assets/hero1.jpg";
+import Hero from "../../assets/Hero.jpg";
 import { motion } from "framer-motion";
 const HeroSection = () => {
   const [opened, { open, close }] = useDisclosure(false);
