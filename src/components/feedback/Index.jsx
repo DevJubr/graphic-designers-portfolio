@@ -210,7 +210,7 @@ const Warpper = styled.div`
 const Feedbacks = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: start;
+  align-items: stretch;
   gap: 1rem;
   width: 100%;
   justify-content: center;

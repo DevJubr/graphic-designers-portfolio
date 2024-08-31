@@ -45,27 +45,13 @@ const Specialities = () => {
           transition={{ duration: 3.5 }}
           viewport={{ once: true }}
         >
-          <ComponentHeadderWrapper state={"row"}>
+          <ComponentHeadderWrapper>
             <Headline>Our Services</Headline>
-            {/* <Subline>
+            <Subline>
               I begin by deeply understanding brand values, translating them
               into impactful visuals, ensuring consistency and resonance across
               brand identity, logo, and stationery or product design.
-            </Subline> */}
-            <motion.img
-              src={ArrowIms}
-              alt="seehere"
-              animate={{
-                rotate: [0, 0, -90, -90, 0],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                times: [0, 0.2, 0.5, 0.8, 1],
-                repeat: Infinity,
-                repeatDelay: 1,
-              }}
-            />
+            </Subline>
           </ComponentHeadderWrapper>
           <BoxWrapper>
             {Specialities_box.map((item, index) => (
@@ -89,24 +75,19 @@ export default Specialities;
 // -----------------styled-----------------------
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
   gap: 3.8rem;
   padding-top: 2.5rem;
-  padding-left: 6.5rem;
-  padding-right: 6.5rem;
-  @media screen and (max-width: 680px) {
-    flex-direction: column;
-  }
 `;
 
 const BoxWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: start;
+  align-items: center;
+  justify-content: center;
   gap: 4.5rem;
   @media screen and (max-width: 680px) {
     gap: 2.5rem;
