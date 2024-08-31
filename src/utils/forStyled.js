@@ -9,8 +9,8 @@ export const Container = styled.div`
 export const ComponentHeadderWrapper = styled.div`
   width: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: ${(props) => (props.state === "row" ? "row" : "column")};
+  align-items: flex-start;
   justify-content: center;
   gap: 1.4rem;
   @media screen and (max-width: 980px) {
@@ -20,13 +20,19 @@ export const ComponentHeadderWrapper = styled.div`
   @media screen and (max-width: 680px) {
     width: 96%;
   }
+  img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+  }
 `;
 export const Headline = styled.h2`
   width: 100%;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 1.5px;
-  font-size: 1.8rem;
+  text-align: start;
+  font-size: 2.8rem;
   background: linear-gradient(180deg, #ff8660 0%, #d5491d 100%);
   background-clip: text;
   -webkit-background-clip: text;

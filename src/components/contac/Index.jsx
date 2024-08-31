@@ -1,6 +1,6 @@
 import { Container } from "../../utils/forStyled";
 import Emoji from "../../assets/emoji.png";
-import { NavButton } from "../appBar";
+// import { NavButton } from "../appBar";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 
@@ -110,5 +110,54 @@ const Subline = styled.div`
     @media screen and (max-width: 540px) {
       width: 100%;
     }
+  }
+`;
+
+const NavButton = styled.a`
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  background: transparent;
+  color: aliceblue;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 1.5rem;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1.5rem;
+    border: 2px solid orange;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #ff8660 0%, #d5491d 100%);
+    clip-path: circle(0% at 0 100%);
+    transition: clip-path 0.4s;
+    z-index: -1;
+  }
+
+  &:hover:before {
+    border: 2px solid orange;
+    border-radius: 1.5rem;
+    clip-path: circle(102.1% at 25% 70%);
+  }
+
+  @media screen and (max-width: 710px) {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.65rem;
+    background: aliceblue;
+    color: black;
+    padding: 0.6rem 1rem;
+    // border-radius: 4rem;
   }
 `;

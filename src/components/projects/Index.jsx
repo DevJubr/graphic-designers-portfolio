@@ -13,7 +13,7 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
-      title: "restaurent logo.",
+      title: " logo.",
       link: "https://www.behance.net/gallery/186157913/Restaurant-Logo",
       poster: Project0,
     },
@@ -39,7 +39,7 @@ const Projects = () => {
           transition={{ duration: 3.5 }}
           viewport={{ once: true }}
         >
-          <ComponentHeadderWrapper>
+          <ComponentHeadderWrapper state={"column"}>
             <Headline>Look at my projects</Headline>
             <Subline>
               Exploring my diverse portfolio – a showcase of passion,
@@ -101,8 +101,7 @@ const Project = styled.div`
   align-items: flex-start;
   background: #1e1e1e;
   padding-bottom: 1rem;
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-radius: 1rem;
   @media screen and (max-width: 1380px) {
     width: 300px;
   }

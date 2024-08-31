@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import ArrowIms from "../../assets/Arrow.svg";
 import {
   Container,
   ComponentHeadderWrapper,
@@ -26,6 +27,12 @@ const Specialities = () => {
       icon: "landscape",
       sub: "Mastering Illustrator, I create intricate and stunning designs, leveraging its tools to produce visually captivating artwork",
     },
+    {
+      name: "Graphic Design",
+      bg: "false",
+      icon: "draw",
+      sub: "From pixel to perfection, our design wizards will turn your ideas into visual wonders. Get ready to wow the world with eye-catching graphics that steal the spotlight!",
+    },
   ];
 
   return (
@@ -38,13 +45,30 @@ const Specialities = () => {
           transition={{ duration: 3.5 }}
           viewport={{ once: true }}
         >
-          <ComponentHeadderWrapper>
-            <Headline>Specialize in</Headline>
-            <Subline>
+          <ComponentHeadderWrapper state={"row"}>
+            <Headline>
+              Our <br />
+              Services
+            </Headline>
+            {/* <Subline>
               I begin by deeply understanding brand values, translating them
               into impactful visuals, ensuring consistency and resonance across
               brand identity, logo, and stationery or product design.
-            </Subline>
+            </Subline> */}
+            <motion.img
+              src={ArrowIms}
+              alt="seehere"
+              animate={{
+                rotate: [0, 0, -90, -90, 0],
+              }}
+              transition={{
+                duration: 2,
+                ease: "easeInOut",
+                times: [0, 0.2, 0.5, 0.8, 1],
+                repeat: Infinity,
+                repeatDelay: 1,
+              }}
+            />
           </ComponentHeadderWrapper>
           <BoxWrapper>
             {Specialities_box.map((item, index) => (
@@ -68,19 +92,24 @@ export default Specialities;
 // -----------------styled-----------------------
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   gap: 3.8rem;
   padding-top: 2.5rem;
+  padding-left: 6.5rem;
+  padding-right: 6.5rem;
+  @media screen and (max-width: 680px) {
+    flex-direction: column;
+  }
 `;
 
 const BoxWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: start;
   gap: 4.5rem;
   @media screen and (max-width: 680px) {
     gap: 2.5rem;

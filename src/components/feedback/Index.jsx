@@ -5,6 +5,7 @@ import Client1 from "../../assets/client/client1.jpg";
 import Client2 from "../../assets/client/client2.jpg";
 import Client3 from "../../assets/client/client3.jpg";
 import nClient from "../../assets/client/nClient.png";
+import Upwork from "../../assets/client/up.svg";
 
 import {
   Container,
@@ -53,6 +54,42 @@ const FeedBacks = () => {
       pic: nClient,
       massage:
         "Md Jayedur, was a pleasure to work with. He not only has great innovative design skills but also really worked with me to bring my vision to light. I didn't just want a pretty colourful logo, but a brand identity which would show and stand for my business. The design captures my brand identity allowing my business to stand out from the rest",
+    },
+    {
+      clint: "upwork",
+      pic: Upwork,
+      massage:
+        "Jayed was incredible to work with! I feel very lucky to have found him. He was able to take my rough vision and create something so special and in such a short period of time! I HIGHLY recommend working with Jayed for any project you have related to marketing. You will not be disappointed!!!",
+    },
+    {
+      clint: "upwork",
+      pic: Upwork,
+      massage: "Very responsive. Followed directions perfectly!",
+    },
+    {
+      clint: "upwork",
+      pic: Upwork,
+      massage:
+        "Jayedur was prompt, responsive, and delivered a great logo - based on specific feedback. What more can you ask for.",
+    },
+
+    {
+      clint: "upwork",
+      pic: Upwork,
+      massage:
+        "Jayedur's designs were clear, concise, and easy to understand. I felt like I was making a difference in my business and in my clients' lives.",
+    },
+    {
+      clint: "upwork",
+      pic: Upwork,
+      massage:
+        "Jayedur was incredibly responsive and had a great time working on our project. His designs were perfect and made our brand stand out.",
+    },
+    {
+      clint: "upwork",
+      pic: Upwork,
+      massage:
+        "Jayedur was incredibly responsive and worked really well with our project. His designs were clear and easy to understand. I'm very satisfied with the results.",
     },
   ];
 
